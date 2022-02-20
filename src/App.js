@@ -1,18 +1,11 @@
 import './App.css';
+import ExchangeRates from './components/ExchangeRates';
 
-function App() {
+function App({gqlQuery}) {
   return (
-    <div className="App">
-      <header>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>My first Apollo app 🚀</h2>
+      <ExchangeRates gqlQuery={gqlQuery}/>
     </div>
   );
 }
